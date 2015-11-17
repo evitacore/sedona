@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>Sedona</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<div class="layout-center">
+		<header class="header">
+			<nav class="main-navigation">
+				<ul>
+					<li class="active">
+						<a class="active" href="index.html">Информация</a>
+					</li>
+					<li>
+						<a href="#">Фото и видео</a>
+					</li>
+					<li class="logo">
+						<a href="index.html" ><img src="img/icon-logo.png" width="138" height="70" alt="Логотип"></a>
+					</li>
+					<li>
+						<a href="#">Карта штата</a>
+					</li>
+					<li>
+						<a href="hotels.html">Гостиницы</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="content-form">
+			<div class="search-hotels">
+				<form action="#" method="get" class="search-hotels-form" >
+					<fieldset title="Дата заезда" class="form-date clearfix">
+						<label for="date-arrival">Дата заезда:</label>
+						<input type="text" id="date-arrival" placeholder="24 апреля 2014" required>
+						<i class="icon-calendar"></i>
+					</fieldset>
+					<fieldset title="Дата выезда" class="form-date clearfix">
+						<label for="date-leaving">Дата выезда:</label>
+						<input type="text" class="form-date" id="date-leaving" placeholder="4 июля 2014" required>
+						<i class="icon-calendar"></i>
+					</fieldset>
+					<fieldset class="adult-children clearfix">
+						<fieldset class="adult" title="Взрослые">
+							<label for="adult">Взрослые:</label>
+							<input type="button" value="-" id="adult-prev" name="adult-prev">
+							<input type="text" id="adult" value="2">
+							<input type="button" value="+" id="adult-next" name="adult-next">
+						</fieldset>
+						<fieldset class="children" title="Дети">
+							<label for="children">Дети:</label>
+							<input type="button" value="-" id="children-prev" name="children-prev">
+							<input type="text" id="children" value="0">
+							<input type="button" value="+" id="children-next" name="children-next">
+						</fieldset>
+					</fieldset>
+					<input type="submit" name="btn-search-hotels" value="Найти">
+				</form>
+
+			</div>
+		</div>
+
+		<footer class="footer clearfix">
+			<p class="links"><a href="index.html">#visitsedona</a></p>
+			<div class="social-buttons">
+				<a href="#" class="btn-social"><i class="icon-twitter"></i></a>
+				<a href="#" class="btn-social"><i class="icon-facebook"></i></a>
+				<a href="#" class="btn-social"><i class="icon-youtube"></i></a>
+			</div>
+			<div class="developers">
+				<p>Website by</p>
+				<a href="http://htmlacademy.ru" class="property-layout"></a>
+			</div>
+		</footer>
+	</div>
+	<script>
+		var html = document.documentElement;
+		html.className = html.className.replace("no-js","js");
+	</script>
+</body>
+</html>

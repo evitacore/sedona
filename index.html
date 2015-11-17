@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="no-js js">
+<head>
+	<meta charset="utf-8">
+	<title>Sedona</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<div class="layout-center">
+		<header class="header">
+			<nav class="main-navigation">
+				<ul>
+					<li class="active">
+						<a class="active" href="index.html">Информация</a>
+					</li>
+					<li>
+						<a href="#">Фото и видео</a>
+					</li>
+					<li class="logo">
+						<a href="index.html" ><img src="img/icon-logo.png" width="138" height="70" alt="Логотип"></a>
+					</li>
+					<li>
+						<a href="#">Карта штата</a>
+					</li>
+					<li>
+						<a href="hotels.html">Гостиницы</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="content">
+			<div class="content-foto">
+				<p class="content-foto-welcome">Welcome -- to the gorgeous --</p>
+				<h1 class="content-foto-SEDONA">SEDONA</h1>
+				<p class="content-foto-description">"Because the Grand Canyon sucks!"
+				</p>
+			</div>
+			<div class="content-title">
+				<h2>Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+				</p>
+			</div>
+			<div class="features clearfix">
+				<div class="features-description">
+					<h2 class="features-title">Настоящий городок</h2>
+					<div class="features-number">
+						<span>№1</span>
+					</div>
+					<p>Седона &#8212; не атракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<div class="features-foto"></div>
+			</div>
+			<div class="features-row clearfix">
+				<div class="features-house">
+					<h2>Жилье</h2>
+					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+				</div>
+				<div class="features-food">
+					<h2>Еда</h2>
+					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+					</p>
+				</div>
+				<div class="features-souvenir">
+					<h2>Сувениры</h2>
+					<p>Не только китайского,<br>но и местного производства!
+					</p>
+				</div>
+			</div>
+			<div class="features clearfix">
+				<div class="features-foto foto-left"></div>
+				<div class="features-description features-description-right">
+					<h2 class="features-title">Там есть<br> мост дьявола</h2>
+					<div class="features-number">
+						<span>№2</span>
+					</div>
+					<p>Да, по нему можно пройти!<br>Если конечно вы осмелитесь
+					</p>
+
+				</div>
+				<div class="features features-short clearfix">
+					<div class="features-description">
+						<h2 class="features-title">Небольшая площадь</h2>
+						<div class="features-number">
+							<span>№3</span>
+						</div>
+						<p>Все достопримеча-<br>тельности находятся очень близко
+						</p>
+					</div>
+					<div class="features-description">
+						<h2 class="features-title">Красивая дорога</h2>
+						<div class="features-number">
+							<span>№4</span>
+						</div>
+						<p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!
+						</p>
+					</div>
+					<div class="features-description">
+						<h2 class="features-title">Мало туристов</h2>
+						<div class="features-number">
+							<span>№5</span>
+						</div>
+						<p>Большинство едет в Гранд Каньон и толпится там
+						</p>
+					</div>
+				</div>
+				<div class="interested-block">
+					<h2>Заинтересовались?</h2>
+					<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
+					</p>
+					<a href="form.html" class="btn-search open-hotels">Поиск гостиницы в седоне</a>
+				</div>
+				<div class="search-hotels">
+					<form action="#" method="get" class="search-hotels-form">
+						<fieldset title="Дата заезда" class="form-date clearfix">
+							<label for="date-arrival">Дата заезда:</label>
+							<input type="text" id="date-arrival" placeholder="24 апреля 2014" required>
+							<i class="icon-calendar"></i>
+						</fieldset>
+						<fieldset title="Дата выезда" class="form-date clearfix">
+							<label for="date-leaving">Дата выезда:</label>
+							<input type="text" class="form-date" id="date-leaving" placeholder="4 июля 2014" required>
+							<i class="icon-calendar"></i>
+						</fieldset>
+						<fieldset class="adult-children clearfix">
+							<fieldset class="adult" title="Взрослые">
+								<label for="adult">Взрослые:</label>
+								<input type="button" value="-" id="adult-prev" name="adult-prev">
+								<input type="text" id="adult" value="2">
+								<input type="button" value="+" id="adult-next" name="adult-next">
+							</fieldset>
+							<fieldset class="children" title="Дети">
+								<label for="children">Дети:</label>
+								<input type="button" value="-" id="children-prev" name="children-prev">
+								<input type="text" id="children" value="0">
+								<input type="button" value="+" id="children-next" name="children-next">
+							</fieldset>
+						</fieldset>
+						<input type="submit" name="btn-search-hotels" value="Найти">
+					</form>
+
+				</div>
+				<div class="map">
+					<div id="yandex-map"></div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer clearfix">
+			<p class="links"><a href="index.html">#visitsedona</a></p>
+			<div class="social-buttons">
+				<a href="#" class="btn-social"><i class="icon-twitter"></i></a>
+				<a href="#" class="btn-social"><i class="icon-facebook"></i></a>
+				<a href="#" class="btn-social"><i class="icon-youtube"></i></a>
+			</div>
+			<div class="developers">
+				<p>Website by</p>
+				<a href="http://htmlacademy.ru" class="property-layout"></a>
+			</div>
+		</footer>
+	</div>
+	<script src="js/hotel.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xm47f0OKB0qhPJjOrD6kcqG1iB3L0nqr&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;id=yandex-map"></script>
+</body>
+</html>
